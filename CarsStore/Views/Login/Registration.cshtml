@@ -1,0 +1,43 @@
+﻿@model UserInfo
+
+<h3>Форма регистрации</h3>
+<div class="row">
+    <form asp-action="Registration" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <div class="col-md-12">
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Surname"></label>
+            <div class="col-md-12">
+                <input asp-for="Surname" class="form-control" />
+                <span asp-validation-for="Surname" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <div class="col-md-12">
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Login"></label>
+            <div class="col-md-12">
+                <input asp-for="Login" class="form-control" />
+                <span asp-validation-for="Login" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <div class="col-md-12">
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+        <input class="btn-success" type="submit" value="Подтвердить" />
+    </form>
+</div>

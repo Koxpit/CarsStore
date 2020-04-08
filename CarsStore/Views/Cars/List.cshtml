@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <h3>@Model.carCategory</h3>
+    <div class="row mt-5 mb-2">
+    @{
+        foreach (Car car in Model.GetAllCars)
+        {
+            @await Html.PartialAsync("AllCars", car)
+        }
+    }
+    </div>
+</body>
+</html>
